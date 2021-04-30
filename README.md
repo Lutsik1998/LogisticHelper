@@ -1,7 +1,7 @@
 # LogisticHelper
 An application that supports running a logistics company
 #
-#The possibilities are listed below user within this application:
+The possibilities are listed below user within this application:
 1)Truck management
 - Addition of truck data
 - Viewing truck data
