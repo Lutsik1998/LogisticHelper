@@ -1,0 +1,6 @@
+/* :host /deep/ .my_text{
+  text-align: center;
+  color: #00fcbd;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: #000000;
+  }; */

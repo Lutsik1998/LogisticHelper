@@ -1,0 +1,15 @@
+.btn{
+    margin: 5px;
+}
+
+
+/* :host /deep/ ng2-smart-table   { 
+    background-color:rgb(238, 202, 238);  
+} */
+
+
+/* :host /deep/ ng2-smart-table-title a:focus { color: #009ECE; } */
+
+/* :host /deep/ ng2-smart-table thead > tr > th > div { color: blue; } */
+
+/* :host /deep/ td.ng2-smart-actions a {cursor: pointer;color: #009ECE; } */

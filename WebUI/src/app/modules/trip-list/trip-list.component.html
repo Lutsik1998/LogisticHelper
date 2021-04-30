@@ -1,0 +1,99 @@
+<!-- <nb-layout class = classTable> -->
+  <nb-layout-footer><h1>{{title}}</h1></nb-layout-footer>
+  <nb-layout-column  >
+    <ng2-smart-table  id = "datatable-trips" [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)"
+  (editConfirm)="onSaveConfirm($event)"
+  (createConfirm)="onCreateConfirm($event)"></ng2-smart-table> 
+  </nb-layout-column>
+  <button nbTooltip = "Click to export all data" nbTooltipStatus="primary" nbButton status="primary" class="btn" (click)="exportAsXLSX()"><nb-icon icon="done-all-outline"></nb-icon>Export all data</button>
+  <button nbTooltip = "Click to export filtered data" nbTooltipStatus="info" nbButton status = "info" class="btn" (click)="exportAsXLSXFiltered()"><nb-icon icon="funnel-outline"></nb-icon>Export filtered data</button>
+<!-- </nb-layout>  -->
+  
+ <!-- </nb-layout>
+ <nb-layout>
+  <nb-layout-column>
+ 
+  </nb-layout-column>
+
+ </nb-layout> -->
+
+
+<!-- <div class="panel panel-primary" >
+  <h2>Trips List</h2>
+  <ng2-smart-table id = "datatable-trips" [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)"
+  (editConfirm)="onSaveConfirm($event)"
+  (createConfirm)="onCreateConfirm($event)"></ng2-smart-table>
+</div>
+<div>
+  &nbsp;<button mat-raised-button color = "primary" (click)="exportAsXLSX()">Excel</button>
+  &nbsp;<button mat-raised-button color = "accent" (click)="exportAsXLSXFiltered()">Excel Filtered</button>
+</div> -->
+
+
+<!-- <div class="panel panel-primary" >
+  <h2>Trips List</h2>
+  <ng2-smart-table matTableExporter  id = "datatable-trips" [settings]="settings" [source]="trips" #exporter="matTableExporter"  (deleteConfirm)="onDeleteConfirm($event)"
+  (editConfirm)="onSaveConfirm($event)"
+  (createConfirm)="onCreateConfirm($event)"></ng2-smart-table>
+</div>
+<div>
+  &nbsp;&nbsp;<button mat-raised-button (click)="exporter.export('xlsx',{fileName:'test'})">Excel</button>
+  &nbsp;&nbsp;<button mat-raised-button (click)="exporter.exportTable('csv')">CSV</button>
+</div> -->
+
+<!-- <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Trips List</h2>
+    </div>
+    <div class="panel-body">
+      <table id="datatable-trips" class="display" cellspacing="0" width="120%">
+
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Date of loading</th>
+            <th scope="col">Date of unloading</th>
+            <th scope="col">Start point</th>
+            <th scope="col">Destination point</th>
+            <th scope="col">Distance (km)</th>
+            <th scope="col">Price (grn)</th>
+            <th scope="col">Price Without VAT (grn)</th>
+            <th scope="col">VAT</th>
+            <th scope="col">Diesel fuel consumed (litr)</th>
+            <th scope="col">Drivers salary</th>
+            <th scope="col">Truck number</th>
+            <th scope="col">Price Per Km (grn)</th>
+            <th scope="col">Expenses (grn)</th>
+            <th scope="col">netProfit (grn)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let trip of trips">
+                <td>{{ trip.id }}</td>
+                <td>{{ trip.customer }}</td>
+                <td>{{ trip.dateOfLoading }}</td>
+                <td>{{ trip.dateOfUnLoading }}</td>
+                <td>{{ trip.startPoint }}</td>
+                <td>{{ trip.destinationPoint }}</td>
+                <td>{{ trip.distance }}</td>
+                <td>{{ trip.price }}</td>
+                <td>{{ trip.priceWithoutVAT }}</td>
+                <td>{{ trip.vat }}</td>
+                <td>{{ trip.dfConsumed }}</td>
+                <td>{{ trip.driversSalary }}</td>
+                <td>{{ trip.truckNumber }}</td>
+                <td>{{ trip.pricePerKm }}</td>
+                <td>{{ trip.expenses }}</td>
+                <td>{{ trip.netProfit }}</td>
+            
+              <td>
+                <button  (click) ="deleteTrip(trip.id)" class="btn btn-danger">Delete</button>
+                <button (click) ="updateTrip(trip.id)" class="btn btn-success" >Edit details</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->

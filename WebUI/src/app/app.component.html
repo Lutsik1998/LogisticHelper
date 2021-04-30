@@ -1,0 +1,13 @@
+<nb-layout >
+  <nb-layout-header  center ><h1 class="my_text">Logistic helper </h1>
+      <nb-actions size = "medium">  
+          <nb-action routerLink="/trucks" routerLinkActive="active"  icon="car"> </nb-action>
+          <nb-action  routerLink="/trips" routerLinkActive="active" icon="globe-2-outline"> Trips </nb-action>
+      </nb-actions>
+  </nb-layout-header>
+
+  <nb-layout-column>
+      <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>
+    

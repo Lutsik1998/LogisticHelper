@@ -1,0 +1,54 @@
+
+  
+  <nb-layout-footer ><h1>{{title}}</h1></nb-layout-footer>
+  
+  <nb-layout-column>
+    
+  <ng2-smart-table  [settings]="settings" [source]="trucks" (deleteConfirm)="onDeleteConfirm($event)"
+  (editConfirm)="onSaveConfirm($event)"
+  (createConfirm)="onCreateConfirm($event)"
+  ></ng2-smart-table>
+  
+  </nb-layout-column>
+
+
+<!-- <div class="panel panel-primary" >
+  <h2>Trucks List</h2>
+  <ng2-smart-table [settings]="settings" [source]="trucks" (deleteConfirm)="onDeleteConfirm($event)"
+  (editConfirm)="onSaveConfirm($event)"
+  (createConfirm)="onCreateConfirm($event)"
+  ></ng2-smart-table>
+  
+  </div> -->
+
+  <!-- <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Trucks List</h2>
+    </div>
+    <div class="panel-body">
+      <table id="datatable-trucks" class="display" cellspacing="0" width="100%">
+        
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Model</th>
+            <th scope="col">Truck number</th>
+            <th scope="col">Truck mileage (km)</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let truck of trucks">
+                <td>{{ truck.id }}</td>
+                <td>{{ truck.model }}</td>
+                <td>{{ truck.truckNumber }}</td>
+                <td>{{ truck.carMileage }}</td>
+            
+              <td>
+                <button  (click) ="deleteTruck(truck.id)" class="btn btn-danger">Delete</button>
+                <button (click) ="updateTruck(truck.id)" class="btn btn-success" >Edit details</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->

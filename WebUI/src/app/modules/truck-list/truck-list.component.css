@@ -1,0 +1,22 @@
+
+:host /deep/ tr.warning td{
+    background-color: rgba(252, 172, 0);
+    };
+
+/* :host /deep/ tr.warning.selected {
+        background-color: rgba(252, 172, 0);
+};
+:host /deep/ tr.warning {
+    background-color: rgba(252, 172, 0);
+    } */
+
+/* .warning:hover tr.warning {
+        background: #e4574d!important;
+   }
+.warning:selected tr.warning {
+        background: #e4574d!important;
+    }
+        
+.warning {
+        background: #e6483d!important;
+    } */
