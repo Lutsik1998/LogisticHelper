@@ -11,7 +11,7 @@ The possibilities are listed below user within this application:
 - Monitoring the condition of the fluid and the truck tires
 - Controlling the condition of the fluid and the truck tires
 
-2)Travel management:
+2) Travel management:
 - Adding trip data to the trip list
 - Viewing trip data from the trip list
 - Editing trip data in the trip list
