@@ -1,0 +1,21 @@
+version: "3.5"
+services:
+  main-db:
+    container_name: mongodb-logistic-webapi # Container name
+    image: mongo # image name to start/build
+    ports: # Port mapping
+      - 27017:27017
+    volumes: # Volume binding
+      - "c:/data/db:/data/db"
+  spring-WebAPI: # The name of the service
+    build:
+      context: . # Location of Dockerfile
+      dockerfile: Dockerfile
+    container_name: lutsik-logistic-spring-WebAPI
+    image: lutsik/logistic-spring-webapi:dev
+    depends_on: # start after
+      - main-db
+    ports:
+      - 8081:8081
+    links: # list mapping: service_name:name_how_will_see_your_program
+      - main-db

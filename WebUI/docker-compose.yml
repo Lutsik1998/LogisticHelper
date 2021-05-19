@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  angular-WebUI:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lutsik-dentist-angular-webui
+    image: lutsik/dentist-angular-webui:dev
+    ports:
+      - "80:80"
