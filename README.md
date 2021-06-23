@@ -1,7 +1,6 @@
 # LogisticHelper
-An application that supports running a logistics company
-#
-The possibilities are listed below user within this application:
+An application that supports running a logistics company.
+User capabilities in this application:
 
 1) Truck management
 - Addition of truck data
@@ -20,3 +19,39 @@ The possibilities are listed below user within this application:
 - Viewing filtered trip data
 - Extracting all trip data to an .xlsx file for further analysis
 - Extracting filtered trip data to an .xlsx file for further analysis
+
+## Build and Run (Dockerizing)
+To run the application must be installed docker and docker-compose
+
+Inside the root folder of the project, execute commands from the console:
+
+- windows:
+
+```
+docker-compose build
+docker-compose up
+```
+
+- linux:
+
+```
+docker-compose -f docker-compose-nix.yml build
+docker-compose -f docker-compose-nix.yml up
+```
+
+To run some of services add the name of servise (main-db, cache-db, spring-WebAPI)
+
+```
+docker-compose up main-db cache-db
+```
+
+### Warning! If one of the ports is already busy, not all items will be running.
+
+## Usage
+
+Application running on the following ports:
+
+- frontend - 80 (http://127.0.0.1:80)
+- backend - 8081 (http://127.0.0.1:8081)
+- mongodb - 27017 (http://127.0.0.1:27017)
+- Backend - swagger_v2: http://127.0.0.1:8080/swagger-ui/index.html
