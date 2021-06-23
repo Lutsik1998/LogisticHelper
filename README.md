@@ -39,10 +39,10 @@ docker-compose -f docker-compose-nix.yml build
 docker-compose -f docker-compose-nix.yml up
 ```
 
-To run some of services add the name of servise (main-db, cache-db, spring-WebAPI)
+To run some of services add the name of servise (main-db, spring-WebAPI, angular-WebUI)
 
 ```
-docker-compose up main-db cache-db
+docker-compose up 
 ```
 
 ### Warning! If one of the ports is already busy, not all items will be running.
