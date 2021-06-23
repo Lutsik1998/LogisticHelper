@@ -54,4 +54,3 @@ Application running on the following ports:
 - frontend - 80 (http://127.0.0.1:80)
 - backend - 8081 (http://127.0.0.1:8081)
 - mongodb - 27017 (http://127.0.0.1:27017)
-- Backend - swagger_v2: http://127.0.0.1:8080/swagger-ui/index.html
